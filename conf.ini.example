@@ -1,0 +1,17 @@
+[production]
+database.params.host      = host
+database.params.port      = 3306
+database.params.dbname    = "dbname"
+database.params.username  = "username"
+database.params.password  = "password"
+
+[project.com : production]
+system.host       = project.com
+system.theme.name = material
+debug.on          = true
+log.on            = true
+log.system.writer = file
+log.path          = /project.com/logs/error.log
+log.system.file   = /project.com/logs/access.log
+cache             = /project.com/cache
+temp              = /project.com/tmp
